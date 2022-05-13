@@ -1,0 +1,9 @@
+string test() {
+    return "world";
+} 
+
+int main() {
+    print("hello");
+    print(test());
+    return 0;
+}

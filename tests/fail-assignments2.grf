@@ -1,0 +1,11 @@
+int main()
+{
+  bool a;
+  int b;
+
+  b = 42;
+  b = 10;
+  a = true;
+  a = false;
+  a = 234; /* Fail: assigning a bool to an integer */
+}

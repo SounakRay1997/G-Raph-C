@@ -1,0 +1,26 @@
+node a;
+node b;
+int i;
+
+int main(){
+    int c;
+    c=0;
+    i=0;
+    b = makeNode("node b", 0);
+    while(c<7){
+        setNodeValue(b,c);
+        c=c+1;
+
+        }
+    while(i<4){
+         
+         i=i+1;
+    }
+    
+    a = makeNode("asdf",10);
+    print(getNodeValue(a));
+    print(getNodeValue(b));
+    print(getNodeLabel(a));
+    print(getNodeLabel(b));
+    return 0;
+}

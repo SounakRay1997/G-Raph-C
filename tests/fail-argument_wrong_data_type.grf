@@ -1,0 +1,15 @@
+void func(int a, bool b)
+{
+    print(a);
+}
+
+void bar()
+{
+    print(2);
+}
+
+int main()
+{
+  foo(42, True);
+  foo(42, bar()); /* int and void, not int and bool */
+}

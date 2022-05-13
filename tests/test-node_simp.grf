@@ -1,0 +1,9 @@
+node a;
+int i;
+
+int main(){
+    a = makeNode("asdf",10);
+    setNodeValue(a, 5);
+    print(getNodeValue(a));
+    return 0;
+}

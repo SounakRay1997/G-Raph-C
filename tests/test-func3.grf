@@ -1,0 +1,8 @@
+void voidFunc() {
+    print("world");
+}
+
+int main() {
+    print("hello");
+    voidFunc();
+}

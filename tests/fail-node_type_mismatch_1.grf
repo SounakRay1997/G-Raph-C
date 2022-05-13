@@ -1,0 +1,6 @@
+node a;
+int main(){
+    a = makeNode("a", 1);
+    setNodeValue(a, "a"); /* Should fail as we are setting node value to a string */
+}
+

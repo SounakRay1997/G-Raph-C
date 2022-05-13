@@ -1,0 +1,4 @@
+node a;
+int main(){
+    a = makeNode(1, 1);/* Should fail as we are setting node id to a integer */
+}

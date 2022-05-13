@@ -1,0 +1,14 @@
+nlist nl;
+node n1;
+node n2;
+node n3;
+int main(){
+     n1 = makeNode("A",10);
+     n2 = makeNode("B", 11);
+     n3 = makeNode("C", 12);  
+    nl=createNList();
+    print(getNodeValue(n1));
+    appendNode(nl,n1);
+    appendNode(nl,n2);
+    print(nlistLen(nl));
+}

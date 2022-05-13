@@ -1,0 +1,11 @@
+node a;
+node b;
+edge e;
+
+
+int main() {
+    a = makeNode("node a", 5);
+    b = makeNode("node b", 10);
+    e = makeEdge(a,b,3, false);
+    return 0;
+}

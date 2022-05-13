@@ -1,0 +1,12 @@
+int a;
+int b;
+void func(int a, int b)
+{
+    print(a+b);
+}
+
+int main()
+{
+  func(42, 21);
+  func(42); 
+}

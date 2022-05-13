@@ -1,0 +1,8 @@
+int b;
+bool c;
+int a;
+int b;
+int main()
+{
+  return 0;
+}

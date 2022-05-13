@@ -1,0 +1,30 @@
+int main() {
+    node a;
+    node b;
+    node x;
+    node f;
+    edge d;
+    graph g;
+    edge c;
+    nlist n;
+    elist e;
+    
+    a = makeNode("a1", 1);
+    b = makeNode("b1", 2);
+    f= makeNode("c1",3);
+    c = makeEdge(a,b,10,true);
+    d = makeEdge(b,a,20,true);
+    
+    n=createNList();
+    e=createEList();
+    appendNode(n,a);
+    appendNode(n,b);
+    appendNode(n,f);
+    appendEdge(e,c);
+    appendEdge(e,d);
+    
+    g = makeGraph(n,e);
+    x = getNodeFromGraph(g,"c1");
+    print(getNodeValue(x));
+    return 0;
+}

@@ -1,0 +1,40 @@
+int main() {
+    node a = makeNode("a1", 1);
+    node b = makeNode("b1", 2);
+    node c = makeNode("c1",3);
+    node d = makeNode("d1",5);
+    node h=makeNode("h",10);
+    edge e1 = makeEdge(a,b,10,true);
+    edge e2 = makeEdge(b,d,10,true);
+    edge e3 = makeEdge(a,c,20,true);
+    edge e4 = makeEdge(c,d,40,true);
+    nlist nl = createNList(); 
+    elist el = createEList();
+    appendNode(nl,a);
+    appendNode(nl,b);
+    appendNode(nl,c);
+    appendNode(nl,d);
+    appendEdge(el,e1);
+    appendEdge(el,e2);
+    appendEdge(el,e3);
+    appendEdge(el,e4);
+    
+    graph g = makeGraph(nl,el);
+    node x = getNodeFromGraph(g,"c1");
+    edge E = getEdgeFromGraph(g,b,c);
+
+    
+    
+    nlist t = getAllNodes(g);
+    elist i = getAllEdges(g);
+   
+    nlist l = createNList();
+    l=getNeighbours(g,a);
+    print(nlistLen(l));
+    bool flag = search(g,"b1","DFS");
+    if(flag){
+        print("YES");
+    }
+
+    return 0;
+}

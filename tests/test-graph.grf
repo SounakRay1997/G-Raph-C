@@ -1,0 +1,22 @@
+int main()
+{
+    graph c;
+    node a;
+    node b;
+    edge e1;
+    edge e2;
+    nlist n;
+    elist e;
+    a = makeNode("a1", 1);
+    b = makeNode("b1", 2);
+    e1 = makeEdge(a,b,10,true);
+    e2 = makeEdge(b,a,20,true);
+    n=createNList();
+    e=createEList();
+    appendNode(n,a);
+    appendNode(n,b);
+    appendEdge(e,e1);
+    appendEdge(e,e2);
+    c=makeGraph(n,e);
+    return 0;
+}

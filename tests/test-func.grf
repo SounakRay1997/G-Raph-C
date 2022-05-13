@@ -1,0 +1,9 @@
+void hi(int a) {
+    print(6);
+}
+
+int main() {
+    int val = 6;
+    hi(val);
+    return 0;
+}

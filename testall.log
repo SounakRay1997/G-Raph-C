@@ -1,0 +1,261 @@
+/opt/homebrew/opt/llvm/bin/lli
+
+###### Testing test-bool
+./graphc.native tests/test-bool.grf > ./test-bool.ll
+llc -relocation-model=pic test-bool.ll > test-bool.s
+cc -o test-bool.exe test-bool.s -pthread inbuilt.o
+./test-bool.exe
+diff -b test-bool.out tests/test-bool.out > test-bool.diff
+###### SUCCESS
+
+###### Testing test-dijkstra
+./graphc.native tests/test-dijkstra.grf > ./test-dijkstra.ll
+llc -relocation-model=pic test-dijkstra.ll > test-dijkstra.s
+cc -o test-dijkstra.exe test-dijkstra.s -pthread inbuilt.o
+./test-dijkstra.exe
+diff -b test-dijkstra.out tests/test-dijkstra.out > test-dijkstra.diff
+###### SUCCESS
+
+###### Testing test-edge
+./graphc.native tests/test-edge.grf > ./test-edge.ll
+llc -relocation-model=pic test-edge.ll > test-edge.s
+cc -o test-edge.exe test-edge.s -pthread inbuilt.o
+./test-edge.exe
+diff -b test-edge.out tests/test-edge.out > test-edge.diff
+###### SUCCESS
+
+###### Testing test-find_path
+./graphc.native tests/test-find_path.grf > ./test-find_path.ll
+llc -relocation-model=pic test-find_path.ll > test-find_path.s
+cc -o test-find_path.exe test-find_path.s -pthread inbuilt.o
+./test-find_path.exe
+diff -b test-find_path.out tests/test-find_path.out > test-find_path.diff
+###### SUCCESS
+
+###### Testing test-findnode
+./graphc.native tests/test-findnode.grf > ./test-findnode.ll
+llc -relocation-model=pic test-findnode.ll > test-findnode.s
+cc -o test-findnode.exe test-findnode.s -pthread inbuilt.o
+./test-findnode.exe
+diff -b test-findnode.out tests/test-findnode.out > test-findnode.diff
+###### SUCCESS
+
+###### Testing test-for
+./graphc.native tests/test-for.grf > ./test-for.ll
+llc -relocation-model=pic test-for.ll > test-for.s
+cc -o test-for.exe test-for.s -pthread inbuilt.o
+./test-for.exe
+diff -b test-for.out tests/test-for.out > test-for.diff
+###### SUCCESS
+
+###### Testing test-func
+./graphc.native tests/test-func.grf > ./test-func.ll
+llc -relocation-model=pic test-func.ll > test-func.s
+cc -o test-func.exe test-func.s -pthread inbuilt.o
+./test-func.exe
+diff -b test-func.out tests/test-func.out > test-func.diff
+###### SUCCESS
+
+###### Testing test-func3
+./graphc.native tests/test-func3.grf > ./test-func3.ll
+llc -relocation-model=pic test-func3.ll > test-func3.s
+cc -o test-func3.exe test-func3.s -pthread inbuilt.o
+./test-func3.exe
+diff -b test-func3.out tests/test-func3.out > test-func3.diff
+###### SUCCESS
+
+###### Testing test-graph
+./graphc.native tests/test-graph.grf > ./test-graph.ll
+llc -relocation-model=pic test-graph.ll > test-graph.s
+cc -o test-graph.exe test-graph.s -pthread inbuilt.o
+./test-graph.exe
+diff -b test-graph.out tests/test-graph.out > test-graph.diff
+###### SUCCESS
+
+###### Testing test-inline
+./graphc.native tests/test-inline.grf > ./test-inline.ll
+llc -relocation-model=pic test-inline.ll > test-inline.s
+cc -o test-inline.exe test-inline.s -pthread inbuilt.o
+./test-inline.exe
+diff -b test-inline.out tests/test-inline.out > test-inline.diff
+###### SUCCESS
+
+###### Testing test-int-local
+./graphc.native tests/test-int-local.grf > ./test-int-local.ll
+llc -relocation-model=pic test-int-local.ll > test-int-local.s
+cc -o test-int-local.exe test-int-local.s -pthread inbuilt.o
+./test-int-local.exe
+diff -b test-int-local.out tests/test-int-local.out > test-int-local.diff
+###### SUCCESS
+
+###### Testing test-int_ops
+./graphc.native tests/test-int_ops.grf > ./test-int_ops.ll
+llc -relocation-model=pic test-int_ops.ll > test-int_ops.s
+cc -o test-int_ops.exe test-int_ops.s -pthread inbuilt.o
+./test-int_ops.exe
+diff -b test-int_ops.out tests/test-int_ops.out > test-int_ops.diff
+###### SUCCESS
+
+###### Testing test-locals
+./graphc.native tests/test-locals.grf > ./test-locals.ll
+llc -relocation-model=pic test-locals.ll > test-locals.s
+cc -o test-locals.exe test-locals.s -pthread inbuilt.o
+./test-locals.exe
+diff -b test-locals.out tests/test-locals.out > test-locals.diff
+###### SUCCESS
+
+###### Testing test-node-edge
+./graphc.native tests/test-node-edge.grf > ./test-node-edge.ll
+llc -relocation-model=pic test-node-edge.ll > test-node-edge.s
+cc -o test-node-edge.exe test-node-edge.s -pthread inbuilt.o
+./test-node-edge.exe
+diff -b test-node-edge.out tests/test-node-edge.out > test-node-edge.diff
+###### SUCCESS
+
+###### Testing test-node
+./graphc.native tests/test-node.grf > ./test-node.ll
+llc -relocation-model=pic test-node.ll > test-node.s
+cc -o test-node.exe test-node.s -pthread inbuilt.o
+./test-node.exe
+diff -b test-node.out tests/test-node.out > test-node.diff
+###### SUCCESS
+
+###### Testing test-node_in_graph
+./graphc.native tests/test-node_in_graph.grf > ./test-node_in_graph.ll
+llc -relocation-model=pic test-node_in_graph.ll > test-node_in_graph.s
+cc -o test-node_in_graph.exe test-node_in_graph.s -pthread inbuilt.o
+./test-node_in_graph.exe
+diff -b test-node_in_graph.out tests/test-node_in_graph.out > test-node_in_graph.diff
+###### SUCCESS
+
+###### Testing test-node_simp
+./graphc.native tests/test-node_simp.grf > ./test-node_simp.ll
+llc -relocation-model=pic test-node_simp.ll > test-node_simp.s
+cc -o test-node_simp.exe test-node_simp.s -pthread inbuilt.o
+./test-node_simp.exe
+diff -b test-node_simp.out tests/test-node_simp.out > test-node_simp.diff
+###### SUCCESS
+
+###### Testing test-nodelist
+./graphc.native tests/test-nodelist.grf > ./test-nodelist.ll
+llc -relocation-model=pic test-nodelist.ll > test-nodelist.s
+cc -o test-nodelist.exe test-nodelist.s -pthread inbuilt.o
+./test-nodelist.exe
+diff -b test-nodelist.out tests/test-nodelist.out > test-nodelist.diff
+###### SUCCESS
+
+###### Testing test-printstr
+./graphc.native tests/test-printstr.grf > ./test-printstr.ll
+llc -relocation-model=pic test-printstr.ll > test-printstr.s
+cc -o test-printstr.exe test-printstr.s -pthread inbuilt.o
+./test-printstr.exe
+diff -b test-printstr.out tests/test-printstr.out > test-printstr.diff
+###### SUCCESS
+
+###### Testing test-remove_edge
+./graphc.native tests/test-remove_edge.grf > ./test-remove_edge.ll
+llc -relocation-model=pic test-remove_edge.ll > test-remove_edge.s
+cc -o test-remove_edge.exe test-remove_edge.s -pthread inbuilt.o
+./test-remove_edge.exe
+./testallfiles.sh: line 46: 72165 Segmentation fault: 11  ./test-remove_edge.exe
+###### FAILED
+
+###### Testing test-remove_node
+./graphc.native tests/test-remove_node.grf > ./test-remove_node.ll
+llc -relocation-model=pic test-remove_node.ll > test-remove_node.s
+cc -o test-remove_node.exe test-remove_node.s -pthread inbuilt.o
+./test-remove_node.exe
+diff -b test-remove_node.out tests/test-remove_node.out > test-remove_node.diff
+###### SUCCESS
+
+###### Testing test-ret
+./graphc.native tests/test-ret.grf > ./test-ret.ll
+llc -relocation-model=pic test-ret.ll > test-ret.s
+cc -o test-ret.exe test-ret.s -pthread inbuilt.o
+./test-ret.exe
+diff -b test-ret.out tests/test-ret.out > test-ret.diff
+###### SUCCESS
+
+###### Testing test-search
+./graphc.native tests/test-search.grf > ./test-search.ll
+llc -relocation-model=pic test-search.ll > test-search.s
+cc -o test-search.exe test-search.s -pthread inbuilt.o
+./test-search.exe
+diff -b test-search.out tests/test-search.out > test-search.diff
+###### SUCCESS
+
+###### Testing test-str
+./graphc.native tests/test-str.grf > ./test-str.ll
+llc -relocation-model=pic test-str.ll > test-str.s
+cc -o test-str.exe test-str.s -pthread inbuilt.o
+./test-str.exe
+diff -b test-str.out tests/test-str.out > test-str.diff
+###### SUCCESS
+
+###### Testing fail-argument_wrong_data_type
+./graphc.native < tests/fail-argument_wrong_data_type.grf 2> fail-argument_wrong_data_type.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-assignments1
+./graphc.native < tests/fail-assignments1.grf 2> fail-assignments1.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-assignments2
+./graphc.native < tests/fail-assignments2.grf 2> fail-assignments2.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-assignments3
+./graphc.native < tests/fail-assignments3.grf 2> fail-assignments3.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-check_scope
+./graphc.native < tests/fail-check_scope.grf 2> fail-check_scope.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-duplicate_func_args
+./graphc.native < tests/fail-duplicate_func_args.grf 2> fail-duplicate_func_args.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-duplicate_functions
+./graphc.native < tests/fail-duplicate_functions.grf 2> fail-duplicate_functions.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-duplicate_global
+./graphc.native < tests/fail-duplicate_global.grf 2> fail-duplicate_global.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-edge_type_mismatch_1
+./graphc.native < tests/fail-edge_type_mismatch_1.grf 2> fail-edge_type_mismatch_1.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-edge_type_mismatch_2
+./graphc.native < tests/fail-edge_type_mismatch_2.grf 2> fail-edge_type_mismatch_2.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-expressions_1
+./graphc.native < tests/fail-expressions_1.grf 2> fail-expressions_1.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-expressions_2
+./graphc.native < tests/fail-expressions_2.grf 2> fail-expressions_2.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-incorrect_num_args
+./graphc.native < tests/fail-incorrect_num_args.grf 2> fail-incorrect_num_args.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-nested_func
+./graphc.native < tests/fail-nested_func.grf 2> fail-nested_func.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-node_type_mismatch_1
+./graphc.native < tests/fail-node_type_mismatch_1.grf 2> fail-node_type_mismatch_1.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-node_type_mismatch_2
+./graphc.native < tests/fail-node_type_mismatch_2.grf 2> fail-node_type_mismatch_2.err >> testall.log
+###### SUCCESS
+
+###### Testing fail-redefine_inbuilt
+./graphc.native < tests/fail-redefine_inbuilt.grf 2> fail-redefine_inbuilt.err >> testall.log
+###### SUCCESS

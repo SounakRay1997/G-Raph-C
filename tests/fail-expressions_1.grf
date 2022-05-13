@@ -1,0 +1,15 @@
+int a;
+bool b;
+
+int func(int a, int c)    
+{
+    a=a+c;
+    a=a+b;
+}
+
+int main()
+{
+  a = 5;
+  b = true;
+  return func(a, a);
+}

@@ -1,0 +1,11 @@
+edge b;
+node c;
+int main(){
+    edge a;
+    node d;
+    a=makeEdge(c,d,10,true);
+    print(getEdgeValue(a));
+    setEdgeValue(a,5);
+    print(getEdgeValue(a));
+    return 0;
+}

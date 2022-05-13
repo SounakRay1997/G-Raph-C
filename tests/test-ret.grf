@@ -1,0 +1,21 @@
+int i;
+int a;
+string s;
+bool b;
+
+int retint(int a) {
+    return a;
+}
+
+void retvoid() {
+    a=5;
+    print(a);
+}
+
+int main() {
+    retvoid();
+    i=13;
+    a = retint(i);
+    print(a);
+    return 0;
+}

@@ -1,0 +1,8 @@
+void checkFunc(){
+    print(5);
+}
+
+int main(){
+    int i = checkFunc();
+    return i;
+}
