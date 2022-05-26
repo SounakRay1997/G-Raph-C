@@ -1,4 +1,4 @@
-# plt-project
+# Programming Languages and Translators project
 
 - Jayshil Dave - jyd2111
 - Sounak Ray - sr3846
